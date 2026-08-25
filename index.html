@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Apply for a personalized workflow review and discover whether AI can help your business recover five hours each week." />
+    <meta name="description" content="Apply for a personalized workflow review and discover whether AI can reduce a recurring task in your business." />
     <meta name="theme-color" content="#241925" />
-    <title>Five-Hour Workflow Review | The Velvet Desk</title>
+    <title>Personalized Workflow Review | The Velvet Desk</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -27,10 +27,6 @@
             <span>✓ Human-reviewed</span><span>✓ Specific to your business</span><span>✓ No generic group call</span>
           </div>
         </div>
-        <aside class="intro-card">
-          <span class="card-number">5H</span>
-          <div><strong>This is not a generic AI class.</strong><p>Strong-fit workflows move to a private, one-on-one audit built around your process and tools.</p></div>
-        </aside>
       </section>
 
       <section class="process" aria-label="How the workflow review works">
@@ -45,13 +41,14 @@
           <ol id="progress-list">
             <li class="active"><span>01</span><div><strong>You</strong><small>About you and the business</small></div></li>
             <li><span>02</span><div><strong>Task</strong><small>The workflow to improve</small></div></li>
-            <li><span>03</span><div><strong>Time</strong><small>Frequency, people and tools</small></div></li>
+            <li><span>03</span><div><strong>Time</strong><small>Weekly hours, people and tools</small></div></li>
             <li><span>04</span><div><strong>Fit</strong><small>Judgment and exceptions</small></div></li>
           </ol>
           <div class="privacy-note"><strong>Keep private information private.</strong><p>Do not include passwords, payment details, customer records, medical information or confidential documents.</p></div>
         </aside>
 
         <form id="workflow-form" class="workflow-form" novalidate>
+          <input type="hidden" name="track" value="workflow-review" />
           <header class="form-heading"><span id="section-count">01 / 04</span><div><h2 id="section-title">A little about you</h2><p id="section-description">So we understand the business behind the workflow.</p></div></header>
 
           <section class="form-panel" data-step="0">
@@ -79,11 +76,8 @@
           </section>
 
           <section class="form-panel" data-step="2" hidden>
-            <div class="field-grid two number-row">
-              <label><span>How many times per week? *</span><input name="occurrencesPerWeek" required type="number" min="1" max="1000" inputmode="numeric" placeholder="20" /></label>
-              <label><span>Minutes each time? *</span><input name="minutesPerOccurrence" required type="number" min="1" max="1440" inputmode="numeric" placeholder="15" /></label>
-            </div>
-            <div class="calculation-note"><span>Why we ask</span><p>Frequency × time shows whether five hours of weekly savings is realistically available.</p></div>
+            <label><span>About how many hours per week does this task take? *</span><input name="hoursPerWeek" required type="number" min="0.25" max="168" step="0.25" inputmode="decimal" placeholder="5" /><small>Your best estimate is enough. Include everyone’s time if more than one person works on it.</small></label>
+            <div class="calculation-note"><span>Why we ask</span><p>This helps us compare the current effort with the time a realistic solution could recover.</p></div>
             <label><span>Which apps, websites or tools are involved? *</span><textarea name="tools" required rows="3" placeholder="Gmail, Google Sheets, HubSpot, QuickBooks, WhatsApp…"></textarea></label>
             <label><span>What information goes in, and what should come out? *</span><textarea name="inputsOutputs" required rows="4" placeholder="We receive a name, email and project description. The final result is a qualified lead in HubSpot with a drafted response."></textarea></label>
             <label><span>Who else is involved? <i>optional</i></span><textarea name="peopleInvolved" rows="3" placeholder="Employees, customers, vendors or anyone who approves part of the task."></textarea></label>
@@ -98,7 +92,7 @@
             <label><span>What would a successful solution look like? *</span><textarea name="desiredOutcome" required rows="4" placeholder="What should happen faster or automatically? What would you still want to review yourself?"></textarea></label>
             <fieldset class="choice-field"><legend>Would you be willing to adjust the current process if needed? *</legend><div><label><input type="radio" name="willingToChange" value="Yes" required /><span>Yes</span></label><label><input type="radio" name="willingToChange" value="It depends" /><span>It depends</span></label><label><input type="radio" name="willingToChange" value="No" /><span>No</span></label></div></fieldset>
             <label><span>Anything else we should know? <i>optional</i></span><textarea name="additionalNotes" rows="3" placeholder="Add any detail that would help us understand the task."></textarea></label>
-            <label class="consent-row"><input type="checkbox" required /><span>I understand this is an application for a workflow review and does not guarantee that my task can save five hours or will be accepted.</span></label>
+            <label class="consent-row"><input type="checkbox" required /><span>I understand this is an application for a workflow review and does not guarantee that my task can be automated or accepted.</span></label>
           </section>
 
           <div id="form-error" class="form-error" role="alert" hidden></div>
@@ -117,6 +111,7 @@
           <div class="success-next"><strong>What happens next</strong><ol><li>We screen the workflow for feasibility.</li><li>We may email you with a clarifying question.</li><li>Qualified workflows are invited to a private audit.</li></ol></div>
         </section>
       </div>
+      <nav class="other-tracks" aria-label="Other applications"><span>Other applications</span><a href="./ai-essentials/">AI Essentials</a><a href="./ai-development/">AI Development</a><a href="./ai-marketing/">AI Marketing & Creative</a><a href="./ai-sales/">AI Sales</a><a href="./ai-customer-service/">AI Customer Service</a></nav>
     </main>
 
     <footer class="site-footer"><strong>The Velvet Desk</strong><span>Practical AI. Measurable time savings.</span></footer>
