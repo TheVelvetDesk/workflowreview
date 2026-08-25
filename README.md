@@ -1,12 +1,7 @@
-# The Velvet Desk — AI Track Applications
+# The Velvet Desk — Personalized Workflow Review
 
-Separate public qualification forms for:
+A public qualification form for a one-on-one AI automation workflow review.
 
-- Personalized Workflow Review
-- AI Essentials
-- AI Development
-- AI Marketing & Creative
-- AI Sales
-- AI Customer Service
+Applicants describe one recurring business workflow, its weekly time cost, tools, judgment, exceptions, and desired outcome. Submissions are stored in the private review dashboard.
 
-Submissions are stored in the private review dashboard. Notification addresses and private dashboard links are intentionally excluded from the public repository.
+Notification addresses and private dashboard links are intentionally excluded from this public repository.
