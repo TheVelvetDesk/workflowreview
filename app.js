@@ -3,7 +3,7 @@ const APPLICATION_ENDPOINT = "https://ai-curriculum-studio.bobcorn3.chatgpt.site
 const sections = [
   ["01", "A little about you", "So we understand the business behind the workflow."],
   ["02", "The task you want to improve", "Choose one recurring task—not your entire business."],
-  ["03", "Time, people and tools", "Help us measure the current cost of the workflow."],
+  ["03", "Time, people and tools", "Estimate the weekly effort and show us where the work happens."],
   ["04", "What makes the task difficult", "The exceptions and decisions determine what can be automated safely."],
 ];
 
