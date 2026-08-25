@@ -27,7 +27,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .brand small, .time-estimate { color: #c9bcc8; font-size: 9px; }
 
 main { max-width: 1300px; margin: auto; padding: 0 30px 70px; }
-.intro { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, .7fr); gap: 46px; align-items: end; padding: 64px 0 38px; }
+.intro { display: block; padding: 64px 0 38px; }
 .eyebrow { margin: 0 0 10px; color: var(--rose); font-size: 10px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
 .intro h1 { max-width: 820px; margin: 0; font-family: Georgia, serif; font-size: clamp(40px, 6vw, 74px); font-weight: 500; line-height: .98; letter-spacing: -.055em; }
 .lede { max-width: 700px; margin: 22px 0 20px; color: #655d64; font-size: 15px; line-height: 1.7; }
@@ -110,6 +110,14 @@ main { max-width: 1300px; margin: auto; padding: 0 30px 70px; }
 .site-footer { display: flex; align-items: center; justify-content: center; gap: 18px; padding: 28px; color: #cfc3cf; background: var(--plum); font-size: 9px; }
 .site-footer strong { color: white; font-family: Georgia, serif; font-weight: 500; }
 .site-footer a { color: var(--rose); }
+.track-page .intro-copy { max-width: 980px; }
+.track-page .intro h1 { max-width: 1000px; }
+.track-page .choice-field > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.track-page .choice-field label > span { height: 100%; min-width: 0; text-align: left; line-height: 1.35; }
+.other-tracks { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 28px 0 0 282px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 15px; background: rgba(255,253,248,.65); }
+.other-tracks > span { margin-right: 4px; color: var(--muted); font-size: 8px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.other-tracks a { padding: 7px 9px; border-radius: 8px; color: var(--plum); background: #efe6e3; font-size: 8px; font-weight: 700; text-decoration: none; }
+.other-tracks a:hover { background: var(--rose-light); }
 [hidden] { display: none !important; }
 
 @media (max-width: 820px) {
@@ -125,6 +133,7 @@ main { max-width: 1300px; margin: auto; padding: 0 30px 70px; }
   .progress-card ol { grid-template-columns: repeat(4, 1fr); gap: 5px; }
   .progress-card li { justify-content: center; padding: 7px; }
   .success-card { grid-column: 1; }
+  .other-tracks { margin-left: 0; }
 }
 
 @media (max-width: 560px) {
@@ -137,6 +146,7 @@ main { max-width: 1300px; margin: auto; padding: 0 30px 70px; }
   .form-heading { gap: 12px; }
   .form-heading h2 { font-size: 23px; }
   .choice-field > div { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .track-page .choice-field > div { grid-template-columns: 1fr; }
   .choice-field label > span { min-width: 0; padding-inline: 6px; }
   .success-card { padding: 34px 22px; }
   .success-card h2 { font-size: 29px; }
